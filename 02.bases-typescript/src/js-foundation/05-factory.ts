@@ -1,5 +1,5 @@
-const { getAge, getID } = require('../plugins')
-const {buildMakePerson} = require('./05-factory-adapter')
+import { getAge, getID } from '../plugins'
+import { buildMakePerson } from './05-factory-adapter'
 
 const makePerson = buildMakePerson({ getID, getAge })
 

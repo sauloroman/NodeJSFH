@@ -1,6 +1,6 @@
 const { http } = require('../plugins')
 
-const getPokemonById = async ( id )  => {
+const getPokemonById = async ( id: string | number ): Promise<string>  => {
 
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 

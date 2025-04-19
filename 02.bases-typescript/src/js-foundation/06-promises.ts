@@ -42,20 +42,20 @@
 
 //* 3
 
-// const getPokemonById = async ( id ) => { 
-//   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+export const getPokemonById = async ( id: string | number ): Promise<string> => { 
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
  
-//   try {
-//     const resp = await fetch( url )
-//     const pokemon = await resp.json()
-//     return pokemon.name
-//   } catch (error) {
-//     throw new Error('Pokemon not found')
-//   }
+  try {
+    const resp = await fetch( url )
+    const pokemon = await resp.json()
+    return pokemon.name
+  } catch (error) {
+    throw new Error('Pokemon not found')
+  }
 
-// }
+}
 
-// getPokemonById(40)
-//   .then( console.log )
-//   .catch( console.error )
-//   .finally(() => console.log('Operacion realizada'))
+getPokemonById(40)
+  .then( console.log )
+  .catch( console.error )
+  .finally(() => console.log('Operacion realizada'))
