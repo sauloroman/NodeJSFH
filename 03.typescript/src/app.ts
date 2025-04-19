@@ -1,26 +1,7 @@
-const heroes = [
-  {
-    id: 1,
-    name: 'Ironman',
-    owner: 'Marvel'
-  },
-  {
-    id: 2,
-    name: 'Spiderman',
-    owner: 'Marvel'
-  },
-  {
-    id: 3,
-    name: 'Batman',
-    owner: 'DC'
-  },
-]
+import { findHeroById } from "./services/hero.service"
 
-const findHeroById = ( id: number ) => {
-  return heroes.find( hero => hero.id === id )
-}
+const hero = findHeroById(1)
 
-const hero = findHeroById(4)
-
-// console.table({hero})
-console.log(hero?.name ?? 'Hero NOT found')
+console.log('Id', hero?.id ) 
+console.log('Nombre', hero?.name ) 
+console.log('Propietario', hero?.owner )
