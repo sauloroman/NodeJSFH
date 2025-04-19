@@ -1,8 +1,9 @@
-// const {emailTemplate} = require('./js-foundation/01-template')
-// require('./js-foundation/02-destructuring')
-// require('./js-foundation/03-callbacks')
-// require('./js-foundation/04-callbacks-arrow')
-// require('./js-foundation/05-factory')
-// require('./js-foundation/06-promises')
-// require('./js-foundation/06-promises-adapter')
-// require('./js-foundation/07.logger')
+// import './js-foundation/01-template'
+// import './js-foundation/02-destructuring'
+// import './js-foundation/03-callbacks'
+// import './js-foundation/04-callbacks-arrow'
+// import './js-foundation/05-factory'
+// import './js-foundation/05-factory-adapter'
+// import './js-foundation/06-promises'
+// import './js-foundation/06-promises-adapter'
+// import './js-foundation/07.logger'

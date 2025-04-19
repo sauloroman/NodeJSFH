@@ -55,7 +55,7 @@ export const getPokemonById = async ( id: string | number ): Promise<string> => 
 
 }
 
-getPokemonById(40)
-  .then( console.log )
-  .catch( console.error )
-  .finally(() => console.log('Operacion realizada'))
+// getPokemonById(40)
+//   .then( console.log )
+//   .catch( console.error )
+//   .finally(() => console.log('Operacion realizada'))
